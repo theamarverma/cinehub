@@ -3,18 +3,20 @@ import { connectToDB } from '@lib/mongoDB';
 import User from '@models/User';
 import { getServerSession } from 'next-auth';
 
-//server actions for server components and fetching api
-export const fetchMyList = async (email: string) => {
+export const fetchMyList = async () => {
 	const session = await getServerSession(option);
+
 	if (!session?.user?.email) {
-		throw new Error('You need to be authenticated to view this content');
+		throw new Error('No user log in');
 	}
 
 	await connectToDB();
-	const user = await User.findOne({ email: session.user.email });
+
+	const user = await User.findOne({ email: session?.user?.email });
 
 	if (!user) {
-		throw new Error('User not found');
+		throw new Error('No user found');
 	}
+
 	return user.favorites;
 };

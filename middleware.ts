@@ -6,7 +6,6 @@ export default withAuth({
 	},
 });
 
-//this is how you can protect routes with next-auth
 export const config = {
-	mather: ['/', '/my-list', '/search/:path*'],
+	matcher: ['/', '/my-list', '/search/:path*'],
 };

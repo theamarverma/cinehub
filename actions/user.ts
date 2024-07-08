@@ -1,4 +1,4 @@
-import { option } from '@app/api/auth/[...nextauth]/option';
+import { option } from '@app/(backend)/api/auth/[...nextauth]/option';
 import { connectToDB } from '@lib/mongoDB';
 import User from '@models/User';
 import { getServerSession } from 'next-auth';

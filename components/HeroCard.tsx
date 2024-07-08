@@ -2,7 +2,6 @@
 import { baseImgUrl } from '@lib/constants';
 import { Movie } from '@lib/types';
 import { InfoOutlined, PlayCircleOutlineOutlined } from '@mui/icons-material';
-import { log } from 'console';
 import Image from 'next/image';
 import { useState } from 'react';
 import Modal from './Modal';

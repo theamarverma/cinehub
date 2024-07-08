@@ -1,6 +1,5 @@
 import { fetchTrending } from '@actions/movieData';
 import HeroCard from './HeroCard';
-import { log } from 'console';
 
 const Hero = async () => {
 	const trending = await fetchTrending();

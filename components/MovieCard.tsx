@@ -14,7 +14,7 @@ const MovieCard = ({ movie }: { movie: Movie }) => {
 	return (
 		<>
 			<div
-				className="movie-card"
+				className="movie-card "
 				onClick={openModal}
 			>
 				<img

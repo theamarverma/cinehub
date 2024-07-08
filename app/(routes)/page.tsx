@@ -1,5 +1,6 @@
 import { fetchGenreMovies } from '@actions/movieData';
 import CategoryList from '@components/CategoryList';
+import Footer from '@components/Footer';
 import Hero from '@components/Hero';
 import Navbar from '@components/Navbar';
 import { Genre } from '@lib/types';
@@ -20,6 +21,7 @@ const Home = async () => {
 					/>
 				))}
 			</div>
+			<Footer />
 		</div>
 	);
 };

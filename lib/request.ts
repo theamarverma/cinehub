@@ -1,5 +1,3 @@
-import { log } from 'console';
-
 export async function getApiResponse(sub_url: string) {
 	try {
 		const url = `${process.env.NEXT_PUBLIC_API_URL}${sub_url}`;

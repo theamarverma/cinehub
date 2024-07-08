@@ -33,7 +33,7 @@
 }
 
 .input {
-	@apply flex items-center justify-between px-5 py-3 rounded-2xl border-2 border-white border-opacity-15 shadow-2xl;
+	@apply flex  items-center justify-between px-5 py-3 rounded-xl border-2 border-white border-opacity-15 shadow-2xl;
 }
 
 .input-field {
@@ -54,7 +54,7 @@
 
 /* Navbar */
 .navbar {
-	@apply top-0 z-10 sticky flex items-center justify-between py-3 px-10;
+	@apply top-0 z-10  sticky flex items-center justify-between py-3 px-10;
 }
 
 .nav-links {
